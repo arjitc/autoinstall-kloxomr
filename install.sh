@@ -11,3 +11,4 @@ cd /etc/yum.repos.d/
 wget https://github.com/mustafaramadhan/kloxo/raw/release/kloxo-mr.repo --no-check-certificate
 cd /
 yum install kloxomr -y
+sh /script/upcp
