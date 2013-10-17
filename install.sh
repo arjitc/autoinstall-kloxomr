@@ -8,7 +8,9 @@ yum install telnet -y
 setenforce 0
 echo ‘SELINUX=disabled’ > /etc/selinux/config
 cd /etc/yum.repos.d/
+rm -rf kloxo-mr.repo
 wget https://github.com/mustafaramadhan/kloxo/raw/release/kloxo-mr.repo --no-check-certificate
 cd /
 yum install kloxomr -y
 sh /script/upcp
+rm -rf install.sh
