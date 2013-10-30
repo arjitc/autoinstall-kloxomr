@@ -13,4 +13,5 @@ wget https://github.com/mustafaramadhan/kloxo/raw/release/kloxo-mr.repo --no-che
 cd /
 yum install kloxomr -y
 sh /script/upcp
+sh /script/restart
 rm -rf install.sh
