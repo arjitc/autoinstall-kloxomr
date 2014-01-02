@@ -21,4 +21,5 @@ sh /script/upcp
 yum clean all
 yum reinstall kloxomr
 sh /script/upcp
+sh /script/restart
 read -p "Install done! Reboot VPS once done!"
