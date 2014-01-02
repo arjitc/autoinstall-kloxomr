@@ -8,10 +8,8 @@ yum install telnet -y
 setenforce 0
 echo ‘SELINUX=disabled’ > /etc/selinux/config
 cd /etc/yum.repos.d/
+rm -rf /tmp/kloxo; mkdir /tmp/kloxo ; cd /tmp/kloxo; 
 rm -rf kloxo-mr.repo
-wget https://github.com/mustafaramadhan/kloxo/raw/release/kloxo-mr.repo --no-check-certificate
-cd /
-yum install kloxomr -y
-sh /script/upcp
-sh /script/restart
-rm -rf install.sh
+wget https://github.com/mustafaramadhan/kloxo/raw/dev/kloxo/install/kloxo-mr-dev.sh --no-check-certificate
+sh ./kloxo-mr-dev.sh
+read -p "Install done! Reboot VPS once done!"
