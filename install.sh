@@ -2,6 +2,7 @@
 echo Starting Kloxo-MR install...
 read -p "press [enter] to start..."
 cd /tmp
+yum update -y
 yum install yum-utils yum-priorities vim-minimal subversion curl zip unzip -y
 yum install telnet -y
 setenforce 0
