@@ -10,7 +10,7 @@ wget https://github.com/mustafaramadhan/kloxo/raw/rpms/release/neutral/noarch/mr
 rpm -ivh mratwork-release-0.0.1-1.noarch.rpm
 yum clean all
 yum update mratwork-* -y
-yum install kloxomr -y
+yum install kloxomr7 -y
 sh /script/upcp
 
 read -p "Install done! Reboot VPS once done!"
